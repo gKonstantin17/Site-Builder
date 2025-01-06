@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1" 
+     stylesheets="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/style/style.css"
+     >
+	<top>
+	<VBox>
+		 <fx:include fx:id="header" source="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/header.fxml" />
+
+		<MenuBar>
+			<Menu text="Проект">
+				<MenuItem text="Создать новый" fx:id="createproject" onAction="#create"/>
+				<MenuItem text="Сохранить" onAction="#save"/>
+				<MenuItem text="Загрузить" onAction="#load" />
+				<MenuItem text="Экспорт проекта" fx:id="menuExport" onAction="#export" />
+			</Menu>
+			<Menu text="Страница">
+				<MenuItem text="Создать" onAction="#createNewPage" />
+				<MenuItem text="Перейти" onAction="#goToProjectPage"/>
+				<MenuItem text="Удалить" onAction="#deletePage"/>
+			</Menu>
+			<Menu text="Помощь">
+				<MenuItem text="Документация" onAction="#openDoc"/> 
+				<MenuItem text="О программе"  onAction="#showAbout" />
+			</Menu>
+		</MenuBar>		
+		<fx:include fx:id="toolbar" source="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/toolbar.fxml" />
+	</VBox>
+	</top>
+	
+	<center>
+	<StackPane alignment="CENTER" styleClass="centerContainer" style="-fx-background-color: transparent;"></StackPane>
+	</center>
+	
+	<left>
+	<fx:include fx:id="left" source="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/left.fxml" />
+	</left>
+	
+	<right>
+	<fx:include fx:id="right" source="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/right.fxml" />
+	</right>
+	
+	<bottom>
+	<HBox styleClass="hbox-bottom">
+		<HBox styleClass="element-bottom">
+			<Label text="Проект: " styleClass="condition"/>
+			<Label text="" fx:id="projectName" styleClass="condition"/>
+		</HBox>
+		<Label text="|" styleClass="condition"/>
+		<HBox styleClass="element-bottom">
+			<Label text="Состояние: " styleClass="condition"/>
+			<Label text="" fx:id="projectSaveLabel" styleClass="condition"/>
+		</HBox>
+		<Label text="|" styleClass="condition"/>
+		<HBox styleClass="element-bottom">
+			<Label text="Страница: " styleClass="condition"/>
+			<Label text="" fx:id="curentPageLabel" styleClass="condition"/>
+		</HBox>
+	</HBox>
+	</bottom>
+</BorderPane>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+
+<HBox
+xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1" 
+     stylesheets="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/style/style.css"
+     fx:controller="UI.Controllers.ToolbarController"
+ styleClass="hbox-top">
+			<ToolBar styleClass="toolbar-tools">
+				<VBox styleClass="tools-element" onMouseClicked="#createDiv">
+					<ImageView styleClass="tools-element-icon" fx:id="createDivImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="блок"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#openSplitMenu">
+					<SplitMenuButton fx:id="splitMenuButton" text="" styleClass="text-tools">
+				        <graphic>
+				            <ImageView fx:id="createTextImg" styleClass="tools-element-icon" 
+				                       preserveRatio="true" pickOnBounds="true"/>
+				        </graphic>
+				        <items>
+					        <MenuItem text="Абзац" onAction="#createP"/>
+					        <MenuItem text="Заголовок 1" onAction="#createH1"/>
+					        <MenuItem text="Заголовок 2" onAction="#createH2"/>
+					        <MenuItem text="Заголовок 3" onAction="#createH3"/>
+				        </items>
+		    		</SplitMenuButton>
+			        <Label styleClass="tools-element-label" text="текст"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createColums">
+					<ImageView styleClass="tools-element-icon" fx:id="createColumnsImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="колонка"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createButton">
+					<ImageView styleClass="tools-element-icon-bigger" fx:id="createButtonsImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="кнопка"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createImg">
+					<ImageView styleClass="tools-element-icon-bigger" fx:id="createIMGImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="картинка"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createForm">
+					<ImageView styleClass="tools-element-icon" fx:id="createFormImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="форма"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createField">
+					<ImageView styleClass="tools-element-icon" fx:id="createFieldImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="поле"/>
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#createHeader">
+					<ImageView styleClass="tools-element-icon" fx:id="createHeaderImg" preserveRatio="true" pickOnBounds="true" />
+			        <Label styleClass="tools-element-label" text="шапка"/>
+				</VBox>
+				
+			</ToolBar>	
+				
+				<Region HBox.hgrow="ALWAYS" />
+				
+			<HBox styleClass="hbox-top-browser">
+				<VBox styleClass="tools-element" onMouseClicked="#deleteElement">
+					<ImageView styleClass="tools-element-icon-browser" fx:id="deleteElementImg" preserveRatio="true" pickOnBounds="true" />
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#uploadImg">
+					<ImageView styleClass="tools-element-icon-browser-bigger" fx:id="ImgUploadImg" preserveRatio="true" pickOnBounds="true" />
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#runJS">
+					<ImageView styleClass="tools-element-icon-browser" fx:id="pageLoadImg" preserveRatio="true" pickOnBounds="true" />
+				</VBox>
+				<VBox styleClass="tools-element" onMouseClicked="#pageReload">
+				<ImageView styleClass="tools-element-icon-browser" fx:id="pageReloadImg" preserveRatio="true" pickOnBounds="true" />
+				</VBox>	
+				<VBox styleClass="tools-element" onMouseClicked="#browserLoad">
+					<ImageView styleClass="tools-element-icon-browser" fx:id="browserReloadImg" preserveRatio="true" pickOnBounds="true" />
+				</VBox>
+			</HBox>
+		</HBox>
+

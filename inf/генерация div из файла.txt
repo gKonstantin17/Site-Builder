@@ -1,0 +1,20 @@
+function loaderElements(jsonArray) {
+    jsonArray.forEach(item => {
+        // Создаем div элемент
+        const div = document.createElement('div');
+        
+        // Устанавливаем ID
+        div.id = item.id;
+
+        // Применяем стили из JSON
+        Object.keys(item.styles).forEach(style => {
+            div.style[style] = item.styles[style];
+        });
+
+        // Добавляем контент
+        div.textContent = item.content;
+
+        // Добавляем div в body (или другой контейнер)
+        document.body.appendChild(div);
+    });
+}

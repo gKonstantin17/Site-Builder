@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+
+<VBox 
+xmlns:fx="http://javafx.com/fxml/1" 
+     stylesheets="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/style/style.css"
+     fx:controller="UI.Controllers.RightPanelController"
+styleClass="vbox-right" alignment="CENTER_RIGHT">
+		<VBox styleClass="visible-right" onMouseClicked="#visibleRight" fx:id="vboxVisibleRight">
+			<ImageView styleClass="visible-right-img" fx:id="visibleRightImg" preserveRatio="true" pickOnBounds="true" />
+		</VBox>
+		<VBox styleClass="vbox-right-content" fx:id="rightContent" VBox.vgrow="ALWAYS">
+			<Label text="Свойства элемента"/>
+			<Label styleClass="tag-selected" fx:id="tagSelected"/>
+			<Label styleClass="id-selected" fx:id="idSelected"/> 
+				
+			
+				
+				<VBox styleClass="vbox-right-content-text" fx:id="vboxText">
+					<TitledPane text="Текст" expanded="false">
+						<TextArea styleClass="area-property" fx:id="areaProperty"/>
+					</TitledPane>
+				</VBox>
+				<VBox styleClass="vbox-right-content-fontSize" fx:id="vboxFontSize">
+					<Label text="Размер шрифта (px)" />
+					<TextField  styleClass="font-size-property" fx:id="fontSizeProperty"/>
+				</VBox>
+				<VBox styleClass="vbox-right-content-font-weight" fx:id="vboxFontWeight">
+					<Label text="Толщина (px)" />
+					<ComboBox fx:id="fontWeightProperty" styleClass="font-weight-property"/>  
+				</VBox>
+				<VBox styleClass="vbox-right-content-fontColor" fx:id="vboxFontColor">
+					<Label text="Цвет текста" />
+					<ColorPicker  styleClass="color-text-property" fx:id="colorTextProperty"/>
+				</VBox>
+				
+				
+				<VBox styleClass="vbox-right-content-backgroundColor">
+					<Label text="Цвет Фона" />
+					<ColorPicker  styleClass="color-background-property" fx:id="colorBackgroundProperty"/>
+				</VBox>
+				<VBox styleClass="vbox-right-content-size">
+					<Label text="Ширина (px)" />
+					<TextField  styleClass="width-property" fx:id="widthProperty"/>
+					<Label text="Высота (px)" />
+					<TextField  styleClass="heigth-property" fx:id="heigthProperty"/>
+				</VBox>
+				<VBox styleClass="vbox-right-content-opacity">
+					<Label text="Непрозрачность (от 0 до 1)" />
+					<TextField  styleClass="opacity-property" fx:id="opacityProperty"/>
+				</VBox>
+				<VBox styleClass="vbox-right-content-border">
+					<Label text="Рамка:" />
+					<Label text="Толщина (px)" />
+					<TextField  styleClass="border-width-property" fx:id="borderWidthProperty"/>
+					<Label text="Стиль" />
+					<ComboBox fx:id="borderStyleProperty" styleClass="border-style-property"/>   
+					<Label text="Цвет" />
+					<ColorPicker  styleClass="border-color-property" fx:id="borderColorProperty"/>
+				</VBox>
+				<VBox styleClass="vbox-right-content-borderRadius">
+					<Label text="Округление (%)" />
+					<TextField  styleClass="border-radius-property" fx:id="borderRadiusProperty"/>
+				</VBox>
+
+				
+			
+		<Button text="Изменить" fx:id="changer" onAction="#change" />	
+		</VBox>
+	</VBox>
+

@@ -1,0 +1,72 @@
+[
+    {
+        "children": [{
+            "children": [{
+                "children": [
+                    {
+                        "children": [],
+                        "classes": [],
+                        "styles": "display: block; font-size: 24px; color: rgb(255, 131, 131); cursor: pointer; margin-right: 20px; text-align: center; padding: 5px 10px; left: 281.038px; top: 42px; font-weight: 800;",
+                        "id": "8903f6be-58b2-4d54-b4e3-1f8398bf941c",
+                        "tag": "p",
+                        "value": null,
+                        "content": "Главная"
+                    },
+                    {
+                        "children": [],
+                        "classes": [],
+                        "styles": "display: block; font-size: 24px; color: rgb(255, 131, 131); cursor: pointer; margin-right: 20px; text-align: center; padding: 5px 10px; left: 596.525px; top: 44px; font-weight: 800;",
+                        "id": "a54ff41b-e90f-40b4-b508-6376558a1b6c",
+                        "tag": "p",
+                        "value": null,
+                        "content": "Осталось совсем немного"
+                    },
+                    {
+                        "children": [],
+                        "classes": [],
+                        "styles": "display: block; font-size: 24px; color: rgb(248, 181, 123); cursor: pointer; margin-right: 20px; text-align: center; padding: 5px 10px; left: 1083.34px; top: 42px; font-weight: 800;",
+                        "id": "e484d8e2-ae9d-4e91-bc13-13fd1daa3df9",
+                        "tag": "p",
+                        "value": null,
+                        "content": "Игрушки"
+                    }
+                ],
+                "classes": ["header-links"],
+                "styles": "display: flex; width: 100%; justify-content: space-around; padding: 10px 0px;",
+                "id": null,
+                "tag": "div",
+                "value": "null",
+                "content": null
+            }],
+            "classes": ["container-header"],
+            "styles": "margin: 0px auto; width: 1140px;",
+            "id": null,
+            "tag": "div",
+            "value": "null",
+            "content": null
+        }],
+        "classes": [],
+        "styles": "background-color: rgb(254, 254, 254); border-bottom: 1px solid black;",
+        "id": "e0a72591-4845-4eee-b996-41928a426e22",
+        "tag": "header",
+        "value": null,
+        "content": null
+    },
+    {
+        "children": [{
+            "children": [],
+            "classes": ["container"],
+            "styles": null,
+            "id": null,
+            "tag": "div",
+            "value": "null",
+            "content": null
+        }],
+        "classes": [],
+        "styles": null,
+        "id": "36bca6f6-db7d-411d-b5ac-d72e30b91959",
+        "tag": "section",
+        "value": null,
+        "content": null
+    }
+]

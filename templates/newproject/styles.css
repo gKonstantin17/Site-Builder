@@ -1,0 +1,93 @@
+*:hover {
+    outline: 1px solid #007BFF;
+}
+html:hover, body:hover, .container:hover {
+    outline: none; 
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+.resizer {
+    position: absolute;
+}
+.resizer:hover{
+    outline: 2px solid #007BFF; 
+    /* TODO
+     заменить на 0
+     */
+}
+.resizer.top {
+    width: 100%;
+    height: 10px;
+    top: 0;
+    cursor: ns-resize;
+    transform: translateX(-10px);
+    z-index: 1;
+}
+
+.resizer.bottom {
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    cursor: ns-resize;
+    transform: translateX(-10px);
+    z-index: 1;
+}
+
+.resizer.left {
+    width: 10px;
+    height: 100%;
+    left: 0;
+    cursor: ew-resize;
+    transform: translateY(-28px);
+    z-index: 1;
+}
+
+.resizer.right {
+    width: 10px;
+    height: 100%;
+    right: 0;
+    cursor: ew-resize;
+    transform: translateY(-28px);
+    z-index: 1;
+}
+
+.resizer.top-left {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    cursor: nwse-resize;
+    z-index: 2;
+}
+
+.resizer.top-right {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    cursor: nesw-resize;
+    z-index: 2;
+}
+
+.resizer.bottom-left {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    cursor: nesw-resize;
+    z-index: 2;
+}
+
+.resizer.bottom-right {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    cursor: nwse-resize;
+    z-index: 2;
+}

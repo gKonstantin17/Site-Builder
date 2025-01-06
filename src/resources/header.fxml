@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+
+<HBox 
+xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1" 
+     stylesheets="file:///C:/Users/kocm8/eclipse-workspace/Prototype/src/resources/style/style.css"
+     fx:controller="UI.Controllers.HeaderController"
+fx:id="titleBar" styleClass="hbox-head">
+			<HBox alignment="CENTER">
+				<ImageView styleClass="program-img" fx:id="programImg" preserveRatio="true" pickOnBounds="true" />
+				<Label styleClass="program-title" text="SiteBuilder"/>
+			</HBox>
+			<Region HBox.hgrow="ALWAYS" />
+			<HBox styleClass="hbox-head-right" alignment="CENTER_LEFT">
+					<VBox styleClass="head-element" onMouseClicked="#minimizeWindow">
+						<ImageView styleClass="head-minimize-img" fx:id="minimizeWindowImg" preserveRatio="true" pickOnBounds="true" />
+					</VBox>
+		            <VBox styleClass="head-element" onMouseClicked="#maximizeWindow">
+						<ImageView styleClass="head-maximize-img" fx:id="maximizeWindowImg" preserveRatio="true" pickOnBounds="true" />
+					</VBox>
+		            <VBox styleClass="head-close" onMouseClicked="#closeWindow">
+						<ImageView styleClass="head-close-img" fx:id="closeWindowImg" preserveRatio="true" pickOnBounds="true" />
+					</VBox>
+		    </HBox>
+</HBox>
+

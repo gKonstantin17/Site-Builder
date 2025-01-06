@@ -1,0 +1,261 @@
+/* общее правила  */
+ .root {
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-text-fill: black;
+} 
+.button {
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-pref-width: 200px;
+}
+
+/*                                        */
+/*                  HEAD                  */
+/*                                        */
+.hbox-head {
+    -fx-background-color: white;
+}
+.program-img {
+    -fx-fit-height: 25px;
+    -fx-fit-width: 25px;
+}
+.program-title {
+    -fx-text-fill: black;
+    -fx-font-size:14px;
+    -fx-padding: 0px 0px 0px 10px;
+}
+.hbox-head-right {
+    -fx-padding: 0px;
+    -fx-spacing: 0px;
+    -fx-alignment: center-right;
+}
+.head-close {
+    -fx-pref-width: 45px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 0; 
+    -fx-alignment: center;
+}
+.head-close:hover {
+    -fx-background-color: red; 
+}
+.head-close:pressed {
+    -fx-background-color: #f1707a; 
+}
+.head-close-img {
+    -fx-fit-height: 13px;
+    -fx-fit-width: 13px;
+}
+.head-element {
+    -fx-pref-width: 45px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 0; 
+    -fx-alignment: center;
+}
+.head-element:hover {
+    -fx-background-color: #e5e5e5; 
+}
+.head-element:pressed {
+    -fx-background-color: #a2a2a2; 
+}
+.head-maximize-img {
+    -fx-fit-height: 13px;
+    -fx-fit-width: 13px;
+}
+.head-minimize-img {
+    -fx-fit-height: 11px;
+    -fx-fit-width: 11px;
+}
+/*                                        */
+/*                TOOLBAR                 */
+/*                                        */
+.hbox-top {
+    -fx-background-color: #f0f0f0;
+    -fx-pref-height: 46px;
+    -fx-max-height: 46px;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #d7d7d7;
+}
+.toolbar-tools {
+    -fx-spacing: 5px;
+}
+.hbox-top-browser {
+    -fx-spacing: 5px;
+    
+}
+.tool-bar {
+    -fx-min-width: 1100px;
+    -fx-background-color: #f0f0f0;
+}
+.text-tools {
+    -fx-background-color: transparent; /* Убирает фон */
+    -fx-border-color: transparent; /* Убирает рамку */
+    -fx-padding: 0; /* Уменьшаем отступы */
+    
+}
+.text-tools .label {
+    -fx-text-fill: black; /* Цвет текста */
+    -fx-padding: 0; /* Убираем лишние отступы */
+    -fx-background-color: transparent;
+}
+.text-tools .arrow-button {
+    -fx-background-color: transparent; /* Убирает фон у кнопки стрелки */
+    -fx-padding: 0; /* Уменьшаем отступы */
+    -fx-border-color: transparent; /* Убираем рамку */
+
+}
+.tools-element{
+    -fx-alignment: center;
+    -fx-min-width: 60px;
+   /* -fx-min-height: 25px;*/
+}
+.tools-element-icon {
+    -fx-fit-height: 15px;
+    -fx-fit-width: 15px;
+}
+.tools-element-icon-bigger {
+    -fx-fit-height: 18px;
+    -fx-fit-width: 18px;
+    -fx-padding: 0px;
+}
+.tools-element-icon-browser {
+    -fx-fit-height: 25px;
+    -fx-fit-width: 25px;
+}
+.tools-element-icon-browser-bigger {
+    -fx-fit-height: 29px;
+    -fx-fit-width: 29px;
+}
+.tools-element-label {
+    -fx-text-fill:black;
+}
+.tools-element:hover{
+    -fx-background-color: #cacacb;
+}
+.centerContainer {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.hbox-top .button {
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 15px;
+    -fx-min-width: 50px;
+    -fx-font-size: 16px;
+}
+.button-working {
+    -fx-background-color: #33993a;
+}
+.button-working:hover {
+    -fx-background-color: #1c5820;
+}
+.button-working:pressed {
+    -fx-background-color: #0096c9;
+}
+/*                                        */
+/*                 LEFT                   */
+/*                                        */
+.vbox-left {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+
+}
+.vbox-left-content {
+    -fx-text-fill: black;
+    -fx-background-color: #f0f0f0;
+    -fx-min-width: 225px;
+    -fx-max-width: 225px;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: #d7d7d7;
+}
+.vbox-left-content .label {
+    -fx-text-fill: black;
+}
+
+.visible-left-img {
+    -fx-fit-height: 15px;
+    -fx-fit-width: 15px;
+}
+.visible-left {
+    -fx-min-width: 15px;
+    -fx-max-width: 15px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-color: #d7d7d7;
+}
+/*                                        */
+/*                 RIGHT                  */
+/*                                        */
+.vbox-right {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.vbox-right-content {
+    -fx-min-width: 225px;
+    -fx-max-width: 225px;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-spacing: 10px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 0px 1px;
+    -fx-border-color: #d7d7d7;
+    -fx-alignment: top-center;
+}
+.vbox-right-content .label {
+    -fx-text-fill: black;
+}
+.accardion {
+    -fx-max-width: 190px;
+}
+.area-property {
+    -fx-wrap-text: true;
+    -fx-max-height: 110px;
+}
+.vbox-right-content .button {
+    -fx-background-color: #0096c9;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 3px;
+    -fx-translate-x: 65px;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-pref-height: 25px;
+    -fx-translate-x: -5px;
+}
+.vbox-right-content .button:hover {
+    -fx-background-color: #026383;
+}
+.vbox-right-content .label {
+    -fx-color: #464746;
+}
+.vbox-right-content-element {
+    -fx-padding: 0px;
+}
+.hbox-bottom {
+    -fx-min-height: 20px;
+    -fx-background-color: #e5e5e5;
+    
+}
+.visible-right-img {
+    -fx-fit-height: 15px;
+    -fx-fit-width: 15px;
+}
+.visible-right {
+    -fx-alignment: center-right;
+    -fx-min-width: 15px;
+    -fx-max-width: 15px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 0px 1px;
+    -fx-border-color: #d7d7d7;
+}
+/*                                        */
+/*                 BOTTOM                 */
+/*                                        */
+.condition {
+    -fx-text-fill: black;
+}
+.element-bottom {
+    -fx-padding: 0px 25px 0px 25px;
+}
