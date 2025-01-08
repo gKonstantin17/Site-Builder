@@ -5,3 +5,7 @@
   - обеспечение взаимодействия между JavaFX и CEF посредством JavaScript.
 Стек технологий:
 ```Java, JavaFX, Java Chromium Embedded Framework, Javascript```
+
+
+### Демо
+![Видео о проекте](demo/Видео 29-12-2024 124338.mp4)
