@@ -3,9 +3,10 @@
   - интеграция Chronium для отображения веб-страниц внутри Java приложения;
   - создание интерфейса с использованием JavaFX;
   - обеспечение взаимодействия между JavaFX и CEF посредством JavaScript.
+  - 
 Стек технологий:
 ```Java, JavaFX, Java Chromium Embedded Framework, Javascript```
 
 
 ### Демо
-![Видео о проекте](demo/Видео 29-12-2024 124338.mp4)
+(https://youtu.be/uj-ioM7HtRA)
